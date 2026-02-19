@@ -31,24 +31,28 @@ Représentée lors de l'Abbaye « La Jeune Suisse des Croisettes ».
 
 ### 2026
 
-Pas de pièce de théâtre cette année pour Les Cornes de Scène. Une partie des acteurs prendra part à la pièce de théâtre spécialement créée par Jean-Michel Gavin pour l'anniversaire des **200 ans de la commune de Forel (Lavaux)**.
+Pas de pièce de théâtre cette année pour Les Cornes de Scène. Une partie des acteurs prendra part à [la pièce de théâtre spécialement créée par Jean-Michel Gavin pour l'anniversaire des **200 ans de la commune de Forel (Lavaux)**](https://forel-lavaux-2026.ch/spectacle.php).
 
 ## Nos membres
 
-| Prénom | Rôle |
-|--------|------|
-| Dann | Président |
-| Sébastien | Caissier |
-| Armand | Secrétaire |
-| Aurélie | |
-| Yoann | |
-| Laura | |
-| Jean-Michel Gavin | |
-| Séverine | |
-| Jean-Marie (Jim) | |
-| Kilian (Mitch) | |
-| Adrien (Pouxy) | |
-| Johann (Skini) | |
+* Adrien (Pouxy)
+* Armand
+* Aurélie
+* Dann
+* Jean-Marie (Jim)
+* Jean-Michel Gavin
+* Johann (Skini)
+* Kilian (Mitch)
+* Laura
+* Sébastien
+* Séverine
+* Yoann
+
+### Comité
+
+* Président : Dann
+* Secrétaire : Armand
+* Caissier : Sébastien
 
 ---
 
