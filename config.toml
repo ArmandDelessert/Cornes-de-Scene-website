@@ -1,29 +1,18 @@
-baseURL = "https://acaif.ch/"
+baseURL = "https://cornesdescene.ch/"
 languageCode = "fr-CH"
-title = "ACAIF"
+title = "Les Cornes de Scène"
 timeZone = "Europe/Zurich"
 buildFuture = true
 
 [params]
-  author = "ACAIF"
-  site_logo = "/ACAIF-logo/ACAIF-logo.svg"
-  description = "Site officiel de l'ACAIF, l'association des commerçants, artisans et industriels de Forel (Lavaux)."
-  banners = [
-    "/banners/2022-05-13-14-08.avif",
-    "/banners/2022-05-13-14-09.avif",
-    "/banners/2022-05-13-14-10.avif",
-    "/banners/2022-10-04-15-01.avif",
-    "/banners/2022-10-04-15-02-00.avif",
-    "/banners/2022-10-04-15-02-12.avif",
-    "/banners/2022-10-04-15-07.avif",
-    "/banners/2022-12-12-15-58.avif",
-  ]
+  author = "Les Cornes de Scène"
+  site_logo = "/CdS-logo/Logo_CdS_Castellar_V1.2_Rond.png"
+  description = "Site officiel des Cornes de Scène, troupe de théâtre amateur de Forel (Lavaux)."
 
 [outputs]
   home = ["HTML", "RSS"]
 
 [permalinks]
-  members = "/members/:slug/"
   events = "/events/:contentbasename/"
 
 [module]
@@ -39,8 +28,3 @@ buildFuture = true
   name = "Événements"
   url = "/events/"
   weight = 2
-
-[[menu.main]]
-  name = "Membres"
-  url = "/members/"
-  weight = 3

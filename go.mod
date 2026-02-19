@@ -1,4 +1,4 @@
-module github.com/acaif/acaif-site
+module github.com/cornesdescene/cornesdescene-website
 
 go 1.25.2
 
