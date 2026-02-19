@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns nested-copy-line-height">
+  {{/* Contenu de la page d'accueil */}}
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    {{ .Content }}
+  </section>
+
+  {{/* Prochains événements */}}
+  {{ $events := where .Site.RegularPages "Section" "events" }}
+  {{ $upcoming := where $events "Date" "ge" now }}
+  {{ $upcomingEvents := ($upcoming.ByDate) | first 3 }}
+
+  {{ if $upcomingEvents }}
+  <section class="mw8 center ph3 ph5-l pv4">
+    <h2 class="f2 fw6 mb4 dark-gray tc">Prochains événements</h2>
+
+    <div class="flex flex-wrap justify-center">
+      {{ range $upcomingEvents }}
+      <div class="w-100 w-third-l pa3">
+        <div class="bg-white ba b--light-gray br3 pa4 h-100 shadow-4 tc">
+          <div class="f3 fw7 dark-blue">{{ .Date.Day }}</div>
+          <div class="f5 fw5 ttu gray mb3">{{ index (split "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre" "_") (sub .Date.Month 1) }} {{ .Date.Year }}</div>
+          <h3 class="f4 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
+          {{ with .Params.location }}
+          {{ if ne . "N/A" }}
+          <p class="f6 gray mt0">{{ . }}</p>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="tc mt4">
+      <a href="/events/" class="f5 fw6 link br3 ph4 pv3 dib white bg-dark-blue hover-bg-blue">Voir tous les événements</a>
+    </div>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

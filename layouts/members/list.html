@@ -1,0 +1,101 @@
+{{ define "main" }}
+<style>
+  /* Breakpoint personnalisé à 640px */
+  .member-card .member-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .member-card .member-logo {
+    width: 100%;
+  }
+  .member-card .member-info {
+    width: 100%;
+  }
+  @media screen and (min-width: 640px) {
+    .member-card .member-flex {
+      flex-direction: row;
+    }
+    .member-card .member-logo {
+      width: 30%;
+    }
+    .member-card .member-info.has-logo {
+      width: 70%;
+    }
+  }
+</style>
+
+<article class="pa3 pa4-ns nested-copy-line-height">
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    {{ .Content }}
+  </section>
+
+  <section class="mw8 center ph3 ph5-l">
+    {{ range .Pages }}
+    {{ $member := . }}
+    <div class="member-card bg-white ba b--light-gray br3 mb4 overflow-hidden shadow-4">
+      <div class="member-flex">
+
+        {{/* Logo de l'entreprise */}}
+        {{ with .Params.featured_image }}
+        <div class="member-logo pa4 flex items-center justify-center bg-near-white">
+          <picture>
+            {{ with $member.Params.featured_image_dark }}
+            <source srcset="{{ . }}" media="(prefers-color-scheme: dark)">
+            {{ end }}
+            <img src="{{ $member.Params.featured_image }}" alt="Logo {{ $member.Title }}" class="mw5 mh-auto" style="max-height: 120px; width: 100%; object-fit: contain;">
+          </picture>
+        </div>
+        {{ end }}
+
+        {{/* Informations du membre */}}
+        <div class="member-info {{ with .Params.featured_image }}has-logo{{ end }} pa4">
+          <h2 class="f3 fw6 mt0 mb2 dark-gray">{{ .Title }}</h2>
+          {{ if or .Params.representative .Params.role }}
+          <p class="f5 fw5 gray mt0 mb3">
+            {{ with .Params.representative }}{{ . }}{{ end }}
+            {{ if and .Params.representative .Params.role }} — {{ end }}
+            {{ with .Params.role }}{{ . }}{{ end }}
+          </p>
+          {{ end }}
+
+          {{/* Description */}}
+          <div class="f5 lh-copy mid-gray mb3">
+            {{ .Content }}
+          </div>
+
+          {{/* Coordonnées */}}
+          <div class="f6 gray">
+            {{ with .Params.address }}
+            <p class="mv1">
+              <span class="fw6">Adresse :</span> {{ . }}
+            </p>
+            {{ end }}
+
+            {{ with .Params.phone }}
+            <p class="mv1">
+              <span class="fw6">Téléphone :</span>
+              <a href="tel:{{ . }}" class="link blue hover-dark-blue">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.email }}
+            <p class="mv1">
+              <span class="fw6">Email :</span>
+              <a href="mailto:{{ . }}" class="link blue hover-dark-blue">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.website }}
+            <p class="mv1">
+              <span class="fw6">Site web :</span>
+              <a href="{{ . }}" target="_blank" rel="noopener" class="link blue hover-dark-blue">{{ . }}</a>
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </section>
+</article>
+{{ end }}

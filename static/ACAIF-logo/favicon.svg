@@ -1,0 +1,18 @@
+<svg	xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 100 100"
+			width="100%" height="100%"
+			aria-label="Logo ACAIF (carré)">
+	<rect width="100" height="100" fill="white" />
+	<g	font-family="'Outfit', 'Futura', 'Century Gothic', sans-serif"
+			font-size="60" font-weight="bold" text-anchor="middle">
+		<text x="50" y="40" textLength="80" lengthAdjust="spacing">
+			<tspan fill="#a6a6a6">a</tspan>
+			<tspan fill="#cf2e2e">c</tspan>
+		</text>
+		<text x="50" y="90" textLength="80" lengthAdjust="spacing">
+			<tspan fill="#cf2e2e">a</tspan>
+			<tspan fill="#000000">i</tspan>
+			<tspan fill="#cf2e2e">f</tspan>
+		</text>
+	</g>
+</svg>
