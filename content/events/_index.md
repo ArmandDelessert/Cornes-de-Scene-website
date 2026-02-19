@@ -1,3 +1,3 @@
 ---
-title: "Événements"
+title: "Pièces de théâtre"
 ---

@@ -1,22 +1,28 @@
 ---
 title: "Le Chant du Coucou"
 date: 2024-04-18
-location: "Grande salle de Forel (Lavaux)"
+author: "Jean-Michel Gavin"
+director: "Jean-Michel Gavin"
 ---
 
-Représentation de la pièce **« Le Chant du Coucou »** lors de l'Abbaye « La Jeune Suisse des Croisettes ».
+La seule chose à savoir est que le coucou est un oiseau qui aime bien nicher chez les autres... Fermez vos portes et n'ouvrez pas aux inconnus, cela vous évitera bien des surprises !
+
+Représentée dans le cadre du concours théâtral de la FVJC organisé par la société de jeunesse de Forel (Lavaux), un joli retour aux sources !
 
 ## Représentations
 
 ### Jeudi 18 avril 2024
 
-Grande salle de Forel (Lavaux)
+Lieu : Grande salle de Forel (Lavaux)
 
-## <Je ne sais pas comment nommer ce titre, aide-moi Claude !>
+## Distribution
 
 **Auteur :** Jean-Michel Gavin
+
 **Mise en scène :** Jean-Michel Gavin
+
 **Acteurs :** Adrien, Aurélie, Dann, Johann, Kilian, Sébastien, Yoann
+
 **Régie :** Armand
 
-![Acteurs](/events/2024-Le-Chant-du-Coucou/Illustration-troupe.avif)
+[![Acteurs](/events/2024-Le-Chant-du-Coucou/Illustration-troupe.avif)](/events/2024-Le-Chant-du-Coucou/Illustration-troupe.avif)

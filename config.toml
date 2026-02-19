@@ -25,6 +25,6 @@ buildFuture = true
   weight = 1
 
 [[menu.main]]
-  name = "Événements"
+  name = "Pièces de théâtre"
   url = "/events/"
   weight = 2

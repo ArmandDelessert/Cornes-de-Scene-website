@@ -21,15 +21,15 @@ This is a Hugo static site for Les Cornes de Scène, a theatre troupe from Forel
 ## Architecture
 
 ### Content Structure
-- `content/_index.md` - Homepage with troupe presentation, past plays, and member list
-- `content/events/` - Events/performances with dates, locations, and descriptions
+- `content/_index.md` - Homepage with troupe presentation, plays overview, and member list
+- `content/events/` - Plays (pièces de théâtre) with dates, locations, cast, and descriptions
 - `content/galleries/` - Photo galleries (placeholder for now)
 - `content/credits.md` - Site credits
 
 ### Custom Layouts
-- `layouts/_default/home.html` - Homepage with upcoming events preview
-- `layouts/events/list.html` - Displays events split into "À venir" and "Événements passés" sections
-- `layouts/events/single.html` - Redirects to /events/
+- `layouts/_default/home.html` - Homepage with content and link to plays
+- `layouts/events/list.html` - Displays all plays as cards (sorted by year, most recent first)
+- `layouts/events/single.html` - Individual play page with full details (representations, cast, etc.)
 
 ### Static Files
 - `static/CdS-logo/` - Troupe logos (square and round versions)
@@ -39,7 +39,7 @@ This is a Hugo static site for Les Cornes de Scène, a theatre troupe from Forel
 - Base URL: `https://cornesdescene.ch/`
 - Language: French (Switzerland) - `fr-CH`
 - Theme: Ananke v2 (`github.com/theNewDynamic/gohugo-theme-ananke/v2`)
-- `buildFuture = true` - Shows upcoming events
+- `buildFuture = true` - Shows future plays
 - Hugo Modules enabled for theme management
 
 ### Deployment
@@ -52,12 +52,11 @@ This is a Hugo static site for Les Cornes de Scène, a theatre troupe from Forel
 
 ## Content Management
 
-### Events
-Fields: title, date, location, description (content body)
+### Plays (pièces de théâtre)
+Front matter fields: title, date, author, director
+Content body: description, representations (dates/locations), cast (distribution), optional images/flyers
 
-Events are automatically sorted:
-- **Upcoming events**: from nearest to farthest date
-- **Past events**: from most recent to oldest
+Plays are displayed sorted from most recent to oldest.
 
 ### Troupe Info
 The homepage contains the troupe's presentation, list of plays performed, and member list. Members are listed with first names only (some with nicknames).

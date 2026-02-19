@@ -7,31 +7,16 @@ Bienvenue sur le site officiel des **Cornes de Scène** !
 
 ## Qui sommes-nous ?
 
-Les Cornes de Scène, c'est un petit groupe d'anciens membres de la jeunesse de Forel (Lavaux) qui avait envie de garder le contact une fois la lettre de démission remise. Après de longues délibérations d'au moins 2 minutes et 17 secondes, ils ont décidé de continuer à faire du théâtre ensemble. Une activité qui les avait fort enthousiasmés durant leurs années passées à la jeunesse, mais aussi à travers la société de gym du village ou encore le chœur d'hommes.
+Créée en **2023** par un petit groupe d'anciens membres de la jeunesse de Forel (Lavaux), **Les Cornes de Scène** est une troupe de théâtre amateur née de l'envie de continuer à jouer ensemble. Le théâtre les avait enthousiasmés durant leurs années à la jeunesse, à la société de gym ou encore au chœur d'hommes. La troupe a la chance de compter parmi ses membres **Jean-Michel Gavin**, écrivain et metteur en scène local, qui les accompagne depuis le début de l'aventure.
 
-C'est donc en **2023** que sont créées **Les Cornes de Scène**.
+## Programme de 2026
 
-La troupe a la chance de compter parmi ses membres un écrivain et metteur en scène de renom, notre homme de théâtre local, **Jean-Michel Gavin**. Il a su transmettre sa passion pour le théâtre et c'était tout naturel de lui demander de continuer l'aventure au sein de cette nouvelle société.
+Pas de pièce cette année. Une partie des acteurs prendra part à [la pièce spécialement créée par Jean-Michel Gavin pour les **200 ans de la commune de Forel (Lavaux)**](https://forel-lavaux-2026.ch/spectacle.php).
 
-## Nos pièces
+## Nos précédentes pièces
 
-### Le Chant du Coucou (2024)
-
-Écrite et mise en scène par **Jean-Michel Gavin**.
-
-Représentée dans le cadre du concours théâtral de la FVJC organisé par la société de jeunesse de Forel (Lavaux), un joli retour aux sources ! La seule chose à savoir est que le coucou est un oiseau qui aime bien nicher chez les autres...
-
-### Cold Up (2025)
-
-Écrite par **Romain Bonnet**, mise en scène par **Jean-Michel Gavin**.
-
-Cette pièce met en scène une prise d'otage dans une banque un soir de décembre. L'agent et le commissaire sur place vont essayer de régler la situation, mais des journalistes sont déjà au courant et ne vont pas les aider...
-
-Représentée lors de l'Abbaye « La Jeune Suisse des Croisettes ».
-
-### 2026
-
-Pas de pièce de théâtre cette année pour Les Cornes de Scène. Une partie des acteurs prendra part à [la pièce de théâtre spécialement créée par Jean-Michel Gavin pour l'anniversaire des **200 ans de la commune de Forel (Lavaux)**](https://forel-lavaux-2026.ch/spectacle.php).
+* **[Cold Up](/events/2025-Cold-Up/)** (2025) — Écrite par Romain Bonnet, mise en scène par Jean-Michel Gavin.
+* **[Le Chant du Coucou](/events/2024-Le-Chant-du-Coucou/)** (2024) — Écrite et mise en scène par Jean-Michel Gavin.
 
 ## Nos membres
 

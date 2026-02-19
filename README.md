@@ -23,14 +23,14 @@ Puis ouvrir `http://localhost:1313` dans le navigateur.
 ```text
 CornesDeScène-website/
 ├── content/
-│   ├── events/          # Événements / représentations
+│   ├── events/          # Pièces de théâtre
 │   ├── galleries/       # Galeries photos
 │   ├── _index.md        # Page d'accueil
 │   └── credits.md       # Page Crédits
 ├── custom-headers/      # Headers HTTP par contexte de déploiement
 ├── layouts/
 │   ├── _default/        # Page d'accueil personnalisée
-│   ├── events/          # Templates personnalisés pour les événements
+│   ├── events/          # Templates pour les pièces de théâtre
 │   └── partials/        # Surcharges du thème (dark mode, favicon, footer)
 ├── static/
 │   └── CdS-logo/       # Logos de la troupe

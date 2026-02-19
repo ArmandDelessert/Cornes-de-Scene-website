@@ -1,34 +1,26 @@
 {{ define "main" }}
 <style>
-  /* Breakpoint personnalisé à 640px */
-  .event-card .event-flex {
+  .play-card {
     display: flex;
     flex-direction: column;
   }
-  .event-card .event-date-box {
+  .play-card .play-year-box {
     width: 100%;
   }
-  .event-card .event-info {
+  .play-card .play-info {
     width: 100%;
   }
   @media screen and (min-width: 640px) {
-    .event-card .event-flex {
+    .play-card {
       flex-direction: row;
     }
-    .event-card .event-date-box {
+    .play-card .play-year-box {
       width: 140px;
       min-width: 140px;
     }
-    .event-card .event-info {
+    .play-card .play-info {
       width: calc(100% - 140px);
     }
-  }
-  /* Style pour les événements passés */
-  .event-card.past-event {
-    opacity: 0.7;
-  }
-  .event-card.past-event .event-date-box {
-    background-color: #777;
   }
 </style>
 
@@ -37,90 +29,32 @@
     {{ .Content }}
   </section>
 
-  {{/* Séparer les événements futurs et passés */}}
-  {{ $now := now }}
-  {{ $upcoming := where .Pages "Date" "ge" $now }}
-  {{ $past := where .Pages "Date" "lt" $now }}
-
-  {{/* Événements à venir (du plus proche au plus lointain) */}}
-  {{ if $upcoming }}
   <section class="mw8 center ph3 ph5-l">
-    <h2 class="f2 fw6 mb4 dark-gray">À venir</h2>
-    {{ range $upcoming.ByDate }}
-    <div class="event-card bg-white ba b--light-gray br3 mb4 overflow-hidden shadow-4">
-      <div class="event-flex">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="link dark-gray db mb4">
+      <div class="bg-white ba b--light-gray br3 overflow-hidden shadow-4 event-card">
+        <div class="play-card">
 
-        {{/* Date de l'événement */}}
-        <div class="event-date-box pa4 flex flex-column items-center justify-center bg-dark-blue white">
-          <span class="f2 fw7 lh-solid">{{ .Date.Day }}</span>
-          <span class="f5 fw5 ttu mt1">{{ index (split "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc." "_") (sub .Date.Month 1) }}</span>
-          <span class="f6 fw4 mt1">{{ .Date.Year }}</span>
-        </div>
-
-        {{/* Informations de l'événement */}}
-        <div class="event-info pa4">
-          <h3 class="f3 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
-
-          {{ with .Params.location }}
-          {{ if ne . "N/A" }}
-          <p class="f5 fw5 gray mt0 mb3">
-            <span class="fw6">Lieu :</span> {{ . }}
-          </p>
-          {{ end }}
-          {{ end }}
-
-          {{/* Description */}}
-          {{ if .Content }}
-          <div class="f5 lh-copy mid-gray">
-            {{ .Content }}
+          {{/* Année */}}
+          <div class="play-year-box pa4 flex flex-column items-center justify-center bg-dark-blue white">
+            <span class="f2 fw7 lh-solid">{{ .Date.Year }}</span>
           </div>
-          {{ end }}
+
+          {{/* Informations de la pièce */}}
+          <div class="play-info pa4">
+            <h3 class="f3 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
+            {{ with .Params.author }}
+            <p class="f5 gray mt0 mb1"><span class="fw6">Auteur :</span> {{ . }}</p>
+            {{ end }}
+            {{ with .Params.director }}
+            <p class="f5 gray mt0 mb1"><span class="fw6">Mise en scène :</span> {{ . }}</p>
+            {{ end }}
+          </div>
         </div>
       </div>
-    </div>
+    </a>
     {{ end }}
   </section>
-  {{ end }}
-
-  {{/* Événements passés (du plus récent au plus ancien) */}}
-  {{ if $past }}
-  <section class="mw8 center ph3 ph5-l mt5">
-    <h2 class="f2 fw6 mb4 gray">Événements passés</h2>
-    {{ range $past.ByDate.Reverse }}
-    <div class="event-card past-event bg-white ba b--light-gray br3 mb4 overflow-hidden shadow-4">
-      <div class="event-flex">
-
-        {{/* Date de l'événement */}}
-        <div class="event-date-box pa4 flex flex-column items-center justify-center white">
-          <span class="f2 fw7 lh-solid">{{ .Date.Day }}</span>
-          <span class="f5 fw5 ttu mt1">{{ index (split "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc." "_") (sub .Date.Month 1) }}</span>
-          <span class="f6 fw4 mt1">{{ .Date.Year }}</span>
-        </div>
-
-        {{/* Informations de l'événement */}}
-        <div class="event-info pa4">
-          <h3 class="f3 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
-
-          {{ with .Params.location }}
-          {{ if ne . "N/A" }}
-          <p class="f5 fw5 gray mt0 mb3">
-            <span class="fw6">Lieu :</span> {{ . }}
-          </p>
-          {{ end }}
-          {{ end }}
-
-          {{/* Description */}}
-          {{ if .Content }}
-          <div class="f5 lh-copy mid-gray">
-            {{ .Content }}
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    {{ end }}
-  </section>
-  {{ end }}
 
 </article>
 {{ end }}
