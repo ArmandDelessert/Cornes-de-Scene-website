@@ -5,7 +5,7 @@ type: "page"
 
 ## Conception et réalisation
 
-Ce site web a été conçu et réalisé par **Armand Delessert** pour le compte des **Cornes de Scène**, troupe de théâtre amateur de Forel (Lavaux).
+Ce site web a été réalisé par **Armand Delessert** pour le compte des **Cornes de Scène**, troupe de théâtre amateur de Forel (Lavaux).
 
 ## Stack technique
 
