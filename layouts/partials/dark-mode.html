@@ -1,0 +1,142 @@
+<style>
+  /* ============================================================
+     Dark Mode – Switch automatique selon les préférences système
+     ============================================================ */
+
+  /* Variables CSS pour le mode clair (défaut) */
+  :root {
+    --bg-primary: #fff;
+    --bg-secondary: #f4f4f4;
+    --bg-card: #fff;
+    --text-primary: #333;
+    --text-secondary: #555;
+    --text-muted: #777;
+    --border-color: #ccc;
+    --link-color: #357edd;
+    --link-hover: #1a4f8b;
+  }
+
+  /* Mode sombre automatique */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-primary: #1a1a1a;
+      --bg-secondary: #2a2a2a;
+      --bg-card: #2a2a2a;
+      --text-primary: #e8e8e8;
+      --text-secondary: #bbb;
+      --text-muted: #999;
+      --border-color: #444;
+      --link-color: #5c9eff;
+      --link-hover: #8cb8ff;
+    }
+
+    /* Corps de la page */
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    /* Surcharge des classes Tachyons - Fonds */
+    .bg-white {
+      background-color: var(--bg-card) !important;
+    }
+
+    .bg-near-white {
+      background-color: var(--bg-secondary) !important;
+    }
+
+    .bg-light-gray {
+      background-color: var(--bg-secondary) !important;
+    }
+
+    /* Surcharge des classes Tachyons - Textes */
+    .dark-gray {
+      color: var(--text-primary) !important;
+    }
+
+    .mid-gray {
+      color: var(--text-secondary) !important;
+    }
+
+    .gray {
+      color: var(--text-muted) !important;
+    }
+
+    .black {
+      color: var(--text-primary) !important;
+    }
+
+    .near-black {
+      color: var(--text-primary) !important;
+    }
+
+    /* Liens */
+    .blue, .link.blue {
+      color: var(--link-color) !important;
+    }
+
+    .hover-dark-blue:hover, .hover-dark-blue:focus {
+      color: var(--link-hover) !important;
+    }
+
+    /* Bordures */
+    .b--light-gray {
+      border-color: var(--border-color) !important;
+    }
+
+    .ba, .bt, .br, .bb, .bl {
+      border-color: var(--border-color);
+    }
+
+    /* Contenu Markdown */
+    .nested-copy-line-height {
+      color: var(--text-primary);
+    }
+
+    .nested-copy-line-height a {
+      color: var(--link-color);
+    }
+
+    .nested-copy-line-height a:visited {
+      color: var(--link-hover);
+    }
+
+    .nested-copy-line-height a:hover,
+    .nested-copy-line-height a:focus {
+      color: var(--link-hover);
+    }
+
+    /* Cartes (événements) */
+    .event-card {
+      background-color: var(--bg-card) !important;
+      border-color: var(--border-color) !important;
+    }
+
+    .event-date-box {
+      background-color: var(--bg-secondary) !important;
+    }
+
+    /* Date box des événements - garder le bleu foncé */
+    .event-card .event-date-box {
+      background-color: #00449e !important;
+    }
+
+    .event-card.past-event .event-date-box {
+      background-color: #555 !important;
+    }
+
+    /* Ombres - plus subtiles en mode sombre */
+    .shadow-4 {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Boutons */
+    .bg-dark-blue {
+      background-color: #00449e !important;
+    }
+
+    .hover-bg-blue:hover {
+      background-color: #357edd !important;
+    }
+  }
+</style>

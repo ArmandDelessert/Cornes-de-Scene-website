@@ -1,0 +1,30 @@
+baseURL = "https://cornesdescene.ch/"
+languageCode = "fr-CH"
+title = "Les Cornes de Scène"
+timeZone = "Europe/Zurich"
+buildFuture = true
+
+[params]
+  author = "Les Cornes de Scène"
+  site_logo = "/CdS-logo/Logo_CdS_Castellar_V1.2_Rond.png"
+  description = "Site officiel des Cornes de Scène, troupe de théâtre amateur de Forel (Lavaux)."
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[permalinks]
+  events = "/events/:contentbasename/"
+
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+
+[[menu.main]]
+  name = "Accueil"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Pièces de théâtre"
+  url = "/events/"
+  weight = 2

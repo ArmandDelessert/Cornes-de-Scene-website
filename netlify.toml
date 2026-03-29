@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.151"
+  GO_VERSION = "1.25"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+# Build de la branche dev : ajoute un fichier _headers pour bloquer l'indexation
+[context.dev]
+  command = "hugo --gc --minify && cp custom-headers/_headers-dev public/_headers"

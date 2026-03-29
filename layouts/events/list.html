@@ -1,0 +1,60 @@
+{{ define "main" }}
+<style>
+  .play-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .play-card .play-year-box {
+    width: 100%;
+  }
+  .play-card .play-info {
+    width: 100%;
+  }
+  @media screen and (min-width: 640px) {
+    .play-card {
+      flex-direction: row;
+    }
+    .play-card .play-year-box {
+      width: 140px;
+      min-width: 140px;
+    }
+    .play-card .play-info {
+      width: calc(100% - 140px);
+    }
+  }
+</style>
+
+<article class="pa3 pa4-ns nested-copy-line-height">
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    {{ .Content }}
+  </section>
+
+  <section class="mw8 center ph3 ph5-l">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="link dark-gray db mb4">
+      <div class="bg-white ba b--light-gray br3 overflow-hidden shadow-4 event-card">
+        <div class="play-card">
+
+          {{/* Année */}}
+          <div class="play-year-box pa4 flex flex-column items-center justify-center bg-dark-blue white">
+            <span class="f2 fw7 lh-solid">{{ .Date.Year }}</span>
+          </div>
+
+          {{/* Informations de la pièce */}}
+          <div class="play-info pa4">
+            <h3 class="f3 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
+            {{ with .Params.author }}
+            <p class="f5 gray mt0 mb1"><span class="fw6">Auteur :</span> {{ . }}</p>
+            {{ end }}
+            {{ with .Params.director }}
+            <p class="f5 gray mt0 mb1"><span class="fw6">Mise en scène :</span> {{ . }}</p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </section>
+
+</article>
+{{ end }}
