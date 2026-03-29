@@ -15,34 +15,30 @@ Pas de pièce cette année. Une partie des acteurs prendra part à [la pièce sp
 
 ## Nos précédentes pièces
 
-### [Cold Up (2025)](/events/2025-Cold-Up/)
+- [Cold Up (2025)](/events/2025-Cold-Up/) – Écrite par Romain Bonnet, mise en scène par Jean-Michel Gavin.
 
-Écrite par Romain Bonnet, mise en scène par Jean-Michel Gavin.
-
-### [Le Chant du Coucou (2024)](/events/2024-Le-Chant-du-Coucou/)
-
-Écrite et mise en scène par Jean-Michel Gavin.
+- [Le Chant du Coucou (2024)](/events/2024-Le-Chant-du-Coucou/) – Écrite et mise en scène par Jean-Michel Gavin.
 
 ## Nos membres
 
-* Adrien (Pouxy)
-* Armand
-* Aurélie
-* Dann
-* Jean-Marie (Jim)
-* Jean-Michel Gavin
-* Johann (Skini)
-* Kilian (Mitch)
-* Laura
-* Sébastien
-* Séverine
-* Yoann
+- Adrien (Pouxy)
+- Armand
+- Aurélie
+- Dann
+- Jean-Marie (Jim)
+- Jean-Michel Gavin
+- Johann (Skini)
+- Kilian (Mitch)
+- Laura
+- Sébastien
+- Séverine
+- Yoann
 
 ### Comité
 
-* Président : Dann
-* Secrétaire : Armand
-* Caissier : Sébastien
+- Président : Dann
+- Secrétaire : Armand
+- Caissier : Sébastien
 
 ## Réseaux sociaux
 
