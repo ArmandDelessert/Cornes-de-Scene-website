@@ -38,6 +38,6 @@ Horaire :
 
 ## Flyer
 
-[![Flyer recto](/events/2025-Cold-Up/Flyer-A5-2025.04.19-00h15-1.png)](/events/2025-Cold-Up/Flyer-A5-2025.04.19-00h15-1.png)
+[![Flyer recto](/events/2025-Cold-Up/Flyer-A5-2025-04-19-00h15-1.png)](/events/2025-Cold-Up/Flyer-A5-2025.04.19-00h15-1.png)
 
 [![Flyer verso](/events/2025-Cold-Up/Flyer-A5-2025-04-19-00h15-2.png)](/events/2025-Cold-Up/Flyer-A5-2025-04-19-00h15-2.png)
