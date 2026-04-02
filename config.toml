@@ -6,7 +6,7 @@ buildFuture = true
 
 [params]
   author = "Les Cornes de Scène"
-  site_logo = "/CdS-logo/Logo_CdS_Castellar_V1.2_Rond.png"
+  site_logo = "/CdS-logo/Logo_CdS_Castellar_V1.2_Rond.webp"
   description = "Site officiel des Cornes de Scène, troupe de théâtre amateur de Forel (Lavaux)."
 
 [outputs]
