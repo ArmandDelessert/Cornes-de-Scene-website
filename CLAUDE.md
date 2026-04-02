@@ -36,7 +36,7 @@ This is a Hugo static site for Les Cornes de Scène, a theatre troupe from Forel
 - `static/_redirects` - Netlify redirect rules
 
 ### Hugo Configuration
-- Base URL: `https://cornesdescene.ch/`
+- Base URL: `https://cornes-de-scene.ch/`
 - Language: French (Switzerland) - `fr-CH`
 - Theme: Ananke v2 (`github.com/theNewDynamic/gohugo-theme-ananke/v2`)
 - `buildFuture = true` - Shows future plays
