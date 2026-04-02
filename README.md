@@ -1,8 +1,27 @@
-# Les Cornes de Scène – Site web
+# Site web des Cornes de Scène
 
 Site officiel des **Cornes de Scène**, troupe de théâtre amateur de Forel (Lavaux).
 
 Ce site est réalisé avec **[Hugo](https://gohugo.io/)** (générateur de site statique) et hébergé sur **[Netlify](https://www.netlify.com/)**.
+
+| **Branche** | **Statut du déploiement** |
+| ----------- | ------------------------- |
+| [`main`](https://github.com/ArmandDelessert/Cornes-de-Scene-website/tree/main) | [![Netlify Status (`main` branch)](https://api.netlify.com/api/v1/badges/d408ed50-857d-4229-9cf4-ebdf64c134c2/deploy-status)](https://app.netlify.com/projects/cornes-de-scene/deploys) |
+| [`dev`](https://github.com/ArmandDelessert/Cornes-de-Scene-website/tree/dev) | [![Netlify Status (`dev` branch)](https://api.netlify.com/api/v1/badges/d408ed50-857d-4229-9cf4-ebdf64c134c2/deploy-status?branch=dev)](https://app.netlify.com/projects/cornes-de-scene/deploys) |
+
+## Accès au site
+
+- Site officiel : [www.cornes-de-scene.ch](https://www.cornes-de-scene.ch/)
+- Préversion : [dev.cornes-de-scene.ch](https://dev.cornes-de-scene.ch/)
+- Lien Netlify : [cornes-de-scene.netlify.app](https://cornes-de-scene.netlify.app/)
+
+## Technologies utilisées
+
+- [Hugo](https://gohugo.io/) (**version extended requise**)
+- [Go](https://go.dev/) (requis pour Hugo Modules)
+- Thème [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke) (via Hugo Modules)
+- Markdown pour le contenu
+- [Netlify](https://www.netlify.com/) pour le déploiement automatique
 
 ## Prérequis
 
