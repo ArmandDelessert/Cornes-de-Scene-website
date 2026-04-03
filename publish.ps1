@@ -35,7 +35,11 @@ Invoke-Git push origin dev
 
 Invoke-Git checkout main
 Invoke-Git merge --squash dev
-Invoke-Git commit -m $version
+
+$squashMsgPath = Join-Path (git rev-parse --git-dir) "SQUASH_MSG"
+$squashMsg = if (Test-Path $squashMsgPath) { Get-Content $squashMsgPath -Raw } else { "" }
+"$version`n`n$squashMsg" | Set-Content $squashMsgPath -NoNewline -Encoding UTF8
+Invoke-Git commit -F $squashMsgPath
 Invoke-Git push origin main
 Write-Host "🚀 Déploiement déclenché sur Netlify." -ForegroundColor Green
 
