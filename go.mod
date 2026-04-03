@@ -1,4 +1,4 @@
-module github.com/cornesdescene/cornesdescene-website
+module github.com/ArmandDelessert/Cornes-de-Scene-website
 
 go 1.25.2
 
