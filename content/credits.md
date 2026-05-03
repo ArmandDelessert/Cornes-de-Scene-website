@@ -10,6 +10,6 @@ Ce site web a été réalisé par **[Armand Delessert](https://armanddelessert.g
 ## Stack technique
 
 - **Générateur de site** : [Hugo](https://gohugo.io/)
-- **Thème** : [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke)
+- **Thème** : [Ananke](https://github.com/gohugo-ananke/ananke)
 - **Hébergement** : [Netlify](https://www.netlify.com/)
 - **Code source** : [GitHub](https://github.com/ArmandDelessert/Cornes-de-Scene-website)

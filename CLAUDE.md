@@ -38,7 +38,7 @@ This is a Hugo static site for Les Cornes de Scène, a theatre troupe from Forel
 ### Hugo Configuration
 - Base URL: `https://cornes-de-scene.ch/`
 - Language: French (Switzerland) - `fr-CH`
-- Theme: Ananke v2 (`github.com/theNewDynamic/gohugo-theme-ananke/v2`)
+- Theme: Ananke v2 (`github.com/gohugo-ananke/ananke/v2`)
 - `buildFuture = true` - Shows future plays
 - Hugo Modules enabled for theme management
 
