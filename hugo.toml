@@ -11,7 +11,7 @@ buildFuture = true
 
 [[cascade]]
   featured_image = "/red-velvet-curtains.avif"
-  [cascade._target]
+  [cascade.target]
     path = "/**"
 
 [outputs]
