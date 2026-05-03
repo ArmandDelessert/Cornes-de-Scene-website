@@ -9,6 +9,11 @@ buildFuture = true
   site_logo = "/CdS-logo/Logo_CdS_Castellar_V1.2_Rond.webp"
   description = "Site officiel des Cornes de Scène, troupe de théâtre amateur de Forel (Lavaux)."
 
+[[cascade]]
+  featured_image = "/red-velvet-curtains.avif"
+  [cascade._target]
+    path = "/**"
+
 [outputs]
   home = ["HTML", "RSS"]
 
