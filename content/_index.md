@@ -1,6 +1,7 @@
 ---
 title: "Les Cornes de Scène"
 description: "Troupe de théâtre amateur de Forel (Lavaux)"
+featured_image: "/red-velvet-curtains.avif"
 ---
 
 Bienvenue sur le site officiel des **Cornes de Scène** !
