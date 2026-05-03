@@ -19,7 +19,7 @@ Ce site est réalisé avec **[Hugo](https://gohugo.io/)** (générateur de site 
 
 - [Hugo](https://gohugo.io/) (**version extended requise**)
 - [Go](https://go.dev/) (requis pour Hugo Modules)
-- Thème [Ananke](https://github.com/theNewDynamic/gohugo-theme-ananke) (via Hugo Modules)
+- Thème [Ananke](https://github.com/gohugo-ananke/ananke) (via Hugo Modules)
 - Markdown pour le contenu
 - [Netlify](https://www.netlify.com/) pour le déploiement automatique
 
