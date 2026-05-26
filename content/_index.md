@@ -13,6 +13,8 @@ Créée en 2023 par un petit groupe d'anciens membres de la jeunesse de Forel (L
 
 Pas de pièce cette année. Une partie des acteurs prendra part à [la pièce spécialement créée par Jean-Michel Gavin pour les **200 ans de la commune de Forel (Lavaux)**](https://forel-lavaux-2026.ch/spectacle.php).
 
+[![Affiche du spectacle "La légende de Forel" organisé à l'occasion du bicentenaire de la commune de Forel (Lavaux)](https://forel-lavaux-2026.ch/img-bicentenaire/Affiche-la-legende-de-forel-2.jpg)](https://forel-lavaux-2026.ch/spectacle.php)
+
 ## Nos précédentes pièces
 
 - [Cold Up (2025)](/events/2025-Cold-Up/) – Écrite par Romain Bonnet, mise en scène par Jean-Michel Gavin.
